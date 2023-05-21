@@ -6,7 +6,7 @@ from funcs import importa_imagens
 class Jogador(pygame.sprite.Sprite):
     def __init__(self, pos, grupos, solidos):
         super().__init__(grupos)
-        self.image = pygame.image.load("./imagens/player.png").convert_alpha()
+        self.image = pygame.image.load("../imagens/player.png").convert_alpha()
         self.rect = self.image.get_rect(topleft=pos)
         self.hitbox = self.rect.inflate(0,-26)
 
@@ -20,7 +20,7 @@ class Jogador(pygame.sprite.Sprite):
         self.solidos = solidos
 
     def assets(self):
-        path = "./imagens/jogador/"
+        path = "../imagens/jogador/"
 
         self.animacoes = {
             "up":[], "down":[], "left":[], "right":[],

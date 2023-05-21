@@ -13,8 +13,8 @@ class Jogo:
         self.mundo = Mundo()
         self.halfwidth = width//2
         self.halfheight = height//2
-        self.floor = pygame.image.load("./imagens/ground.png").convert()
-        self.icon = pygame.image.load("./imagens/icon.png")
+        self.floor = pygame.image.load("../imagens/ground.png").convert()
+        self.icon = pygame.image.load("../imagens/icon.png")
         self.floorrect = self.floor.get_rect(topleft=(0,0))
 
         self.offset = pygame.math.Vector2()

@@ -19,18 +19,18 @@ class Mundo:
         
         #usando arquivos CSV para adicionar sprites ao grupo dos Tiles
         layout = {
-            "barreira":read_csv("./CSVs/colisoes.csv"),
-            "corrimao_down":read_csv("./CSVs/corrimao_down.csv"),
-            "corrimao_up":read_csv("./CSVs/corrimao_up.csv"),
-            "corrimao_vertical":read_csv("./CSVs/corrimao_vertical.csv"),
-            "corrimao_cornerup_left":read_csv("./CSVs/corrimao_cornerup_left.csv"),
-            "corrimao_cornerup_right":read_csv("./CSVs/corrimao_cornerup_right.csv"),
-            "corrimao_cornerdown_left":read_csv("./CSVs/corrimao_cornerdown_left.csv"),
-            "corrimao_cornerdown_right":read_csv("./CSVs/corrimao_cornerdown_right.csv"),
+            "barreira":read_csv("../CSVs/colisoes.csv"),
+            "corrimao_down":read_csv("../CSVs/corrimao_down.csv"),
+            "corrimao_up":read_csv("../CSVs/corrimao_up.csv"),
+            "corrimao_vertical":read_csv("../CSVs/corrimao_vertical.csv"),
+            "corrimao_cornerup_left":read_csv("../CSVs/corrimao_cornerup_left.csv"),
+            "corrimao_cornerup_right":read_csv("../CSVs/corrimao_cornerup_right.csv"),
+            "corrimao_cornerdown_left":read_csv("../CSVs/corrimao_cornerdown_left.csv"),
+            "corrimao_cornerdown_right":read_csv("../CSVs/corrimao_cornerdown_right.csv"),
             #"interativo":read_csv("./CSVs/interativos.csv")
         }
         surfs = {
-            "corrimao":importa_imagens("./imagens/corrimao")
+            "corrimao":importa_imagens("../imagens/corrimao")
         }
         for nome, layout in layout.items():
             for rowi, row in enumerate(layout):
@@ -72,7 +72,7 @@ class Camera(pygame.sprite.Group):
         self.meioheight = self.display.get_height()//2
         self.offset = pygame.math.Vector2()
 
-        self.floor = pygame.image.load("./imagens/ground.png").convert()
+        self.floor = pygame.image.load("../imagens/ground.png").convert()
         self.floorrect = self.floor.get_rect(topleft=(0,0))
 
     def desenho(self, jogador):
