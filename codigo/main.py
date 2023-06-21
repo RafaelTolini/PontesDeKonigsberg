@@ -21,14 +21,17 @@ class Jogo:
 
         pygame.display.set_caption("Pontes de Königsberg")
         pygame.display.set_icon(self.icon)
+        # pygame.mixer.music.load("./musica/musica.wav")
+        # pygame.mixer.music.set_volume(0.5)
+        # pygame.mixer.music.play()
 
         #snow setup
         self.snow = []
-        for i in range(2000):
+        for _ in range(2000):
             xsnow = r(0, self.floor.get_width())
             ysnow = r(0, self.floor.get_height())
             snowsize = 4
-            self.snow.append([xsnow, ysnow, snowsize])
+            self.snow.append([xsnow, ysnow, snowsize, rc([0.6, 0.8, 1])])
 
     def run(self):
         while True:
@@ -38,7 +41,12 @@ class Jogo:
                     sys.exit()
 
             self.screen.fill(0)
-            self.mundo.run()
+
+            if not self.mundo.over:
+                self.mundo.run()
+            else:
+                self.mundo.dialogue()
+                self.mundo.cooldown()
 
             #snow
             if self.mundo.jogador.rect.centerx - self.halfwidth < 0:
@@ -57,11 +65,13 @@ class Jogo:
 
             for flakeindex, flake in enumerate(self.snow):
                 pygame.draw.rect(self.screen, (255,255,255), (flake[0]-self.offset.x, flake[1]-self.offset.y, flake[2],flake[2]))
-                self.snow[flakeindex][1] += 0.8
+                self.snow[flakeindex][1] += self.snow[flakeindex][3]
                 if self.snow[flakeindex][1] > self.floor.get_height():
                     self.snow[flakeindex][0] = r(0, self.floor.get_width())
                     self.snow[flakeindex][1] = r(-50,-10)
 
+            if not self.mundo.over:
+                self.mundo.dialogue()
 
             pygame.display.update()
             self.clock.tick(fps)
