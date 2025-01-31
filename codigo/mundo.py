@@ -146,8 +146,8 @@ class Mundo:
         ])
 
         self.texto_fim.extend([
-            ["Isso é um teste"],
-            ["Também é um teste"]
+            ["Minha conclusão é que não é possível atravessar as\nSete Pontes, passando por cada uma exatamente uma\nvez e terminando no distrito de partida."],
+            ["Agora irei pra casa e escreverei sobre isso. Chamarei\nmeus estudos de Teoria dos Grafos!"]
         ])
 
         #criando jogador
