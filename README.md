@@ -61,13 +61,13 @@ Ou executar o arquivo `main.py` diretamente a partir do seu IDE.
 
 <p align="center">
   
-  <img src="https://github.com/user-attachments/assets/021f3b6f-168f-48fe-a7c9-8db1b09f53ea" width="33%" alt="Preview 0">
-  <img src="https://github.com/user-attachments/assets/4b5aa3ee-2bdf-447d-92d7-ac6f9ad6eaac" width="33%" alt="Preview 1">
+  <img src="https://github.com/user-attachments/assets/021f3b6f-168f-48fe-a7c9-8db1b09f53ea" width="40%" alt="Preview 0">
+  <img src="https://github.com/user-attachments/assets/4b5aa3ee-2bdf-447d-92d7-ac6f9ad6eaac" width="40%" alt="Preview 1">
   <br/>
-  <img src="https://github.com/user-attachments/assets/844658a9-273e-43d8-b84c-e6e10e1c0e76" width="33%" alt="Preview 2">
-  <img src="https://github.com/user-attachments/assets/4fc9aba7-d7c4-4e69-a2f3-5f7730d6ef6a" width="33%" alt="Preview 3">
+  <img src="https://github.com/user-attachments/assets/844658a9-273e-43d8-b84c-e6e10e1c0e76" width="40%" alt="Preview 2">
+  <img src="https://github.com/user-attachments/assets/4fc9aba7-d7c4-4e69-a2f3-5f7730d6ef6a" width="40%" alt="Preview 3">
   <br/>
-  <img src="https://github.com/user-attachments/assets/95aaa8c0-e466-4573-ac0d-8b3bbe922ada" width="33%" alt="Preview 4">
-  <img src="https://github.com/user-attachments/assets/c0f95b35-86e6-4966-8cbf-5fb38ded6f08" width="33%" alt="Preview 5">
+  <img src="https://github.com/user-attachments/assets/95aaa8c0-e466-4573-ac0d-8b3bbe922ada" width="40%" alt="Preview 4">
+  <img src="https://github.com/user-attachments/assets/c0f95b35-86e6-4966-8cbf-5fb38ded6f08" width="40%" alt="Preview 5">
   
 </p>
